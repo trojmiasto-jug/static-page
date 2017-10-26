@@ -1,4 +1,19 @@
 <nav id="sidebar-icon-links">
+    <a id="meetup-link"
+       class="icon" title="Meetups" aria-label="Meetups"
+       href="{{ site.meetup.profile }}">
+      {% include svg/meetup.svg %}
+    </a>
+    <a id="twitter-link"
+       class="icon" title="Twitter" aria-label="Twitter"
+       href="{{ site.twitter.profile }}">
+      {% include svg/twitter.svg %}
+    </a>
+    <a id="fb-link"
+       class="icon" title="facebook" aria-label="Facebook"
+       href="{{ site.facebook.profile }}">
+      {% include svg/facebook.svg %}
+    </a>
   {% if site.github.repo %}
     <a id="github-link"
        class="icon" title="Github Project" aria-label="Github Project"
