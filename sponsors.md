@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sponsorzy
-sidebar_link: true
+sidebar_link: false
 ---
 <div id="toc">
     <li><a href="#obecni_sponsorzy">Obecni sponsorzy</a></li>
