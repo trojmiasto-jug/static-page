@@ -1,13 +1,14 @@
 ---
 layout: page
-title: About
-sidebar_link: false
+title: O nas
+sidebar_link: true
 ---
+<h1> JUG co? </h1>
+Jesteśmy grupą skupiającą pasjonatów programowania, głównie związanych z platformą Java, ale jesteśmy otwarci na wszystkich zainteresowanych poznawaniem różnych aspektów wytwarzania oprogramowania. Zapraszamy osoby, które chcą poznać lepiej JVM i języki działające na nim, frameworki ułatwiające nam pracę, dowiedzieć się więcej o pisaniu czystego kodu czy testów.
+Organizujemy regularne spotkania dla już programujących, cykl spotkań o podstawach programowania oraz Hackergarteny gdzie kontrybujemy do projektów Open Source
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on!
-</p>
+Zawsze szukamy prelegentów. Jak nim zostać? Sprawdź na stronie [O prelegencie]({{ site.baseurl }}{% link speaker.md %})
 
-To make pages show up in the sidebar, add `sidebar_link: true` to the front
-matter.
+{% include accordion_sponsors.html %}
+
+{% include accordion_leaders.html %}

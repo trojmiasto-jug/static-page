@@ -4,33 +4,36 @@
        href="{{ site.meetup.profile }}">
       {% include svg/meetup.svg %}
     </a>
+
     <a id="twitter-link"
        class="icon" title="Twitter" aria-label="Twitter"
        href="{{ site.twitter.profile }}">
       {% include svg/twitter.svg %}
     </a>
+
     <a id="fb-link"
        class="icon" title="facebook" aria-label="Facebook"
        href="{{ site.facebook.profile }}">
       {% include svg/facebook.svg %}
     </a>
+
     <a id="yt-link"
        class="icon" title="Meeting recordings" aria-label="Youtube"
        href="{{ site.youtube.profile }}">
       {% include svg/youtube.svg %}
     </a>
-  {% if site.github.repo %}
+
     <a id="github-link"
-       class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.github.repo }}">
+       class="icon" title="Our Projects" aria-label="Our Projects"
+       href="{{ site.github.profile }}">
       {% include svg/github.svg %}
     </a>
-    <a id="github-download-link"
-       class="icon" title="Download" aria-label="Download"
-       href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">
-      {% include svg/download.svg %}
+
+    <a id="mail-link"
+       class="icon" title="Contact us" aria-label="Contact us"
+       href="{{ site.github.profile }}">
+      {% include svg/mail.svg %}
     </a>
-  {% endif %}
 
   <a id="subscribe-link"
      class="icon" title="Subscribe" aria-label="Subscribe"

@@ -1,21 +1,30 @@
 <div id="sidebar">
   <header>
+    <div class="align-top">
+      <img src="img/logo.png" class="img-thumbnail" alt="JUG logo"/>
+    </div>
+  </header>
+
+  {% if site.version %}
+  <header>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
-      <a href="{{ site.baseurl }}/">
-        {% unless page.url == "/" %}
-          <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
-        {% endunless %}
-        {{ site.title }}
-      </a>
+    <a href="{{ site.baseurl }}/">
+      {% unless page.url == "/" %}
+      <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
+      {% endunless %}
+      {{ site.title }}
+    </a>
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
     <p class="lead">{{ site.description }}</p>
   </header>
+  {% endif %}
   {% include sidebar-nav-links.html %}
 
   {% if site.version %}
-    <span class="site-version">Currently v{{ site.version }}</span>
+  <span class="site-version">Currently v{{ site.version }}</span>
   {% endif %}
 
   {% include sidebar-icon-links.html %}
+  {% include sidebar_sponsors.html %}
   {% include copyright.html %}
 </div>

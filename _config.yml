@@ -20,6 +20,11 @@ author:
 paginate:         10
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 plugins:
   - jekyll-feed
@@ -33,8 +38,10 @@ sidebar_home_link:  true
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
-#github:
-#  repo:             https://github.com/fongandrew/hydeout
+github:
+  profile: https://github.com/trojmiasto-jug
+
+mail: jugtrojmiasto@gmail.com
 
 meetup:
   profile: https://www.meetup.com/Trojmiasto-Java-User-Group/
