@@ -1,8 +1,10 @@
 <div id="sidebar">
   <header>
-    <div class="align-top">
-      <img src="img/logo.png" class="img-thumbnail" alt="JUG logo"/>
-    </div>
+    <a href="/">
+      <div class="align-top">
+        <img src="img/logo.png" class="img-thumbnail" alt="JUG logo"/>
+      </div>
+    </a>
   </header>
 
   {% if site.version %}
@@ -24,7 +26,7 @@
   <span class="site-version">Currently v{{ site.version }}</span>
   {% endif %}
 
-  {% include sidebar-icon-links.html %}
   {% include sidebar_sponsors.html %}
+  {% include sidebar-icon-links.html %}
   {% include copyright.html %}
 </div>

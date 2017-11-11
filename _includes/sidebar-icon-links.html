@@ -31,15 +31,9 @@
 
     <a id="mail-link"
        class="icon" title="Contact us" aria-label="Contact us"
-       href="{{ site.github.profile }}">
+       href="mailto:{{ site.mail }}">
       {% include svg/mail.svg %}
     </a>
-
-  <a id="subscribe-link"
-     class="icon" title="Subscribe" aria-label="Subscribe"
-     href="{{ site.baseurl }}/feed.xml">
-    {% include svg/feed.svg %}
-  </a>
 
   {% comment %}
     Check if we have tag or search pages page active before linking to it.
